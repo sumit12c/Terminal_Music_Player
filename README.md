@@ -67,35 +67,11 @@ Follow the steps below to set up DRAGON on a Windows device.
 
 All commands in this guide are intended to be run in **PowerShell**.
 
----
 
-## 1. Install Git
-
-Git is required to download the DRAGON source code from GitHub.
-
-Install Git using PowerShell:
-
-```
-winget install --id Git.Git -e
-```
-
-After installation, close PowerShell and open it again.
-
-Check that Git is installed:
-
-```
-git --version
-```
-
-You can also check its location:
-
-```
-where.exe git
-```
 
 ---
 
-# 2. Install GCC / MinGW
+# 1. Install GCC / MinGW
 
 DRAGON requires a **C++20-compatible GCC compiler**.
 
@@ -133,7 +109,7 @@ where.exe g++
 
 ---
 
-# 3. Install CMake
+# 2. Install CMake
 
 CMake is used to configure and build DRAGON.
 
@@ -159,7 +135,7 @@ where.exe cmake
 
 ---
 
-# 4. Verify the Development Environment
+# 3. Verify the Development Environment
 
 Run:
 
@@ -175,7 +151,7 @@ If all commands return valid versions and paths, the development environment is 
 
 ---
 
-# 5. Download the DRAGON Source Code
+# 4. Download the DRAGON Source Code
 
 Clone the repository using Git:
 
@@ -193,7 +169,7 @@ cd MUSIC_PLAYER_trm
 
 ---
 
-# 6. FTXUI Setup
+# 5. FTXUI Setup
 
 DRAGON uses **FTXUI** for its terminal user interface.
 
@@ -211,7 +187,7 @@ CMake automatically downloads FTXUI when the project is configured.
 
 ---
 
-# 🔨 7. Configure the Project
+# 🔨 6. Configure the Project
 
 From inside the DRAGON project directory:
 
@@ -223,7 +199,7 @@ CMake will configure the project and automatically download the required FTXUI d
 
 ---
 
-# 🏗️ 8. Build DRAGON
+# 🏗️ 7. Build DRAGON
 
 Build the project using:
 
@@ -239,7 +215,7 @@ build\MusicPlayerTRM.exe
 
 ---
 
-# ▶️ 9. Run DRAGON
+# ▶️ 8. Run DRAGON
 
 Run DRAGON from PowerShell:
 
