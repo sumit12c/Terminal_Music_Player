@@ -43,11 +43,7 @@ No unnecessary background services.
 DRAGON currently supports:
 
 ```text
-.mp3
-.wav
-.flac
-.ogg
-.m4a
+.mp3, .wav, .flac, .ogg, .m4a
 ```
 
 ---
@@ -211,30 +207,7 @@ You do **not** need to manually download or install FTXUI.
 
 CMake automatically downloads FTXUI when the project is configured.
 
----
 
-# 📁 Project Structure
-
-After cloning the repository and downloading miniaudio, the project should contain:
-
-```
-MUSIC_PLAYER_trm/
-│
-├── src/
-│   └── main.cpp
-│
-├── third_party/
-│   ├── miniaudio.c
-│   └── miniaudio.h
-│
-├── SS1.png
-├── SS2.png
-├── CMakeLists.txt
-├── README.md
-└── .gitignore
-```
-
-The `build/` directory will be created automatically by CMake.
 
 ---
 
