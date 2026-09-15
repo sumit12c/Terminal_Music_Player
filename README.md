@@ -337,6 +337,8 @@ Your music files remain in their original location.
 
 DRAGON only scans the music folder you provide and plays supported audio files.
 
+> **Note:** DRAGON has currently been tested only on Windows. This is an open-source project, so you are welcome to adapt it for Linux or macOS.
+
 ---
 
 ## DRAGON
