@@ -1,4 +1,4 @@
-# 🐉 DRAGON Music Player
+# 🎶 DRAGON Music Player
 
 A lightweight, keyboard-first terminal music player for Windows.(around 30mbs of RAM and ~1% of CPU for my laptop results may vary)
 
