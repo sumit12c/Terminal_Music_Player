@@ -1,6 +1,6 @@
 # 🐉 DRAGON Music Player
 
-A lightweight, keyboard-first terminal music player for Windows.
+A lightweight, keyboard-first terminal music player for Windows.(around 30mbs of RAM and ~1% of CPU for my laptop results may vary)
 
 DRAGON is built with **C++20**, **FTXUI**, and **miniaudio** and is designed for playing local music files directly from the terminal.
 
