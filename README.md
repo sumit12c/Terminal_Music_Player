@@ -197,51 +197,7 @@ cd MUSIC_PLAYER_trm
 
 ---
 
-# 6. Download miniaudio
-
-DRAGON uses **miniaudio** for local audio playback.
-
-The project requires:
-
-```
-miniaudio.c
-miniaudio.h
-```
-
-Create the `third_party` directory:
-
-```
-New-Item -ItemType Directory -Force .\third_party
-```
-
-Download `miniaudio.h`:
-
-```
-curl.exe -L "https://raw.githubusercontent.com/mackron/miniaudio/master/miniaudio.h" -o ".\third_party\miniaudio.h"
-```
-
-Download `miniaudio.c`:
-
-```
-curl.exe -L "https://raw.githubusercontent.com/mackron/miniaudio/master/miniaudio.c" -o ".\third_party\miniaudio.c"
-```
-
-Verify the files:
-
-```
-Get-ChildItem .\third_party
-```
-
-You should see:
-
-```
-miniaudio.c
-miniaudio.h
-```
-
----
-
-# 7. FTXUI Setup
+# 6. FTXUI Setup
 
 DRAGON uses **FTXUI** for its terminal user interface.
 
@@ -282,7 +238,7 @@ The `build/` directory will be created automatically by CMake.
 
 ---
 
-# 🔨 8. Configure the Project
+# 🔨 7. Configure the Project
 
 From inside the DRAGON project directory:
 
@@ -294,7 +250,7 @@ CMake will configure the project and automatically download the required FTXUI d
 
 ---
 
-# 🏗️ 9. Build DRAGON
+# 🏗️ 8. Build DRAGON
 
 Build the project using:
 
@@ -310,7 +266,7 @@ build\MusicPlayerTRM.exe
 
 ---
 
-# ▶️ 10. Run DRAGON
+# ▶️ 9. Run DRAGON
 
 Run DRAGON from PowerShell:
 
@@ -406,7 +362,7 @@ Run:
 
 ---
 
-# 🐉 Add the `dragon` Command
+# Add the `dragon` Command
 
 To launch DRAGON without typing the full executable path, add the project folder
 to your Windows User PATH.
