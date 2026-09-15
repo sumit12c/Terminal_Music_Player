@@ -10,7 +10,7 @@ No unnecessary background services.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### DRAGON Music Player
 
@@ -22,7 +22,7 @@ No unnecessary background services.
 
 ---
 
-## ✨ Features
+## Features
 
 - 🎵 Local music playback
 - 📁 Recursive music folder scanning
@@ -38,7 +38,7 @@ No unnecessary background services.
 
 ---
 
-# 🎧 Supported Audio Formats
+## Supported Audio Formats
 
 DRAGON currently supports:
 
@@ -48,7 +48,7 @@ DRAGON currently supports:
 
 ---
 
-# 🖥️ Environment
+## Environment
 
 ```text
 Operating System : Windows 10 / Windows 11
@@ -61,17 +61,15 @@ Audio Engine     : miniaudio
 
 ---
 
-# ⚙️ Setup DRAGON on Windows
+## Setup DRAGON on Windows
 
 Follow the steps below to set up DRAGON on a Windows device.
 
 All commands in this guide are intended to be run in **PowerShell**.
 
-
-
 ---
 
-# 1. Install GCC / MinGW
+### 1. Install GCC / MinGW
 
 DRAGON requires a **C++20-compatible GCC compiler**.
 
@@ -89,27 +87,15 @@ Check the GCC version:
 gcc --version
 ```
 
-Check the G++ version:
-
-```
-g++ --version
-```
-
 Check that GCC is available in PATH:
 
 ```
 where.exe gcc
 ```
 
-Check G++:
-
-```
-where.exe g++
-```
-
 ---
 
-# 2. Install CMake
+### 2. Install CMake
 
 CMake is used to configure and build DRAGON.
 
@@ -135,23 +121,7 @@ where.exe cmake
 
 ---
 
-# 3. Verify the Development Environment
-
-Run:
-
-```
-git --version
-gcc --version
-g++ --version
-cmake --version
-```
-
-
-If all commands return valid versions and paths, the development environment is ready.
-
----
-
-# 4. Download the DRAGON Source Code
+### 3. Download the DRAGON Source Code
 
 Clone the repository using Git:
 
@@ -169,7 +139,7 @@ cd MUSIC_PLAYER_trm
 
 ---
 
-# 5. FTXUI Setup
+### 4. FTXUI Setup
 
 DRAGON uses **FTXUI** for its terminal user interface.
 
@@ -183,11 +153,9 @@ You do **not** need to manually download or install FTXUI.
 
 CMake automatically downloads FTXUI when the project is configured.
 
-
-
 ---
 
-# 🔨 6. Configure the Project
+### 5. Configure the Project
 
 From inside the DRAGON project directory:
 
@@ -199,7 +167,7 @@ CMake will configure the project and automatically download the required FTXUI d
 
 ---
 
-# 🏗️ 7. Build DRAGON
+### 6. Build DRAGON
 
 Build the project using:
 
@@ -215,7 +183,7 @@ build\MusicPlayerTRM.exe
 
 ---
 
-# ▶️ 8. Run DRAGON
+### 7. Run DRAGON
 
 Run DRAGON from PowerShell:
 
@@ -239,7 +207,7 @@ DRAGON will recursively scan the folder and its subfolders for supported audio f
 
 ---
 
-# 💾 Music Folder
+## Music Folder
 
 DRAGON remembers the music folder you selected.
 
@@ -267,7 +235,7 @@ Then start DRAGON again:
 
 ---
 
-# 🛠️ Rebuilding After Code Changes
+## Rebuilding After Code Changes
 
 If you modify `src/main.cpp` or another project file, rebuild using:
 
@@ -283,7 +251,7 @@ Then run:
 
 ---
 
-# 🧹 Completely Clean the Build
+## Completely Clean the Build
 
 To remove the generated CMake build directory:
 
@@ -311,7 +279,7 @@ Run:
 
 ---
 
-# Add the `dragon` Command
+## Add the `dragon` Command
 
 To launch DRAGON without typing the full executable path, add the project folder
 to your Windows User PATH.
@@ -322,9 +290,9 @@ Run these commands from the DRAGON project directory:
 $dragonPath = (Get-Location).Path
 
 [Environment]::SetEnvironmentVariable(
-	"Path",
-	[Environment]::GetEnvironmentVariable("Path", "User") + ";" + $dragonPath,
-	"User"
+    "Path",
+    [Environment]::GetEnvironmentVariable("Path", "User") + ";" + $dragonPath,
+    "User"
 )
 
 where.exe dragon
@@ -341,7 +309,7 @@ The `dragon` command runs the [`dragon.cmd`](dragon.cmd) launcher.
 
 ---
 
-# ⚡ Lightweight Design
+## Lightweight Design
 
 DRAGON is designed to remain lightweight.
 
@@ -359,7 +327,7 @@ Actual CPU and RAM usage depends on the computer, terminal, audio file, and oper
 
 ---
 
-# 🔒 Local Music
+## Local Music
 
 DRAGON is intended for music stored on your own computer.
 
@@ -371,7 +339,7 @@ DRAGON only scans the music folder you provide and plays supported audio files.
 
 ---
 
-# 🐉 DRAGON
+## DRAGON
 
 ```
 Your music.
